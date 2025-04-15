@@ -1,0 +1,90 @@
+<html>
+    
+    <head>
+        <title> 
+            Hello world
+        </title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: rgb(44, 42, 72);">
+
+        <div class="row">    
+            <div class="image-container"><img id="image1" src="Images/image1.png" width="200" height="200" 
+                onmouseover= "this.src='Images/image10.png';"
+                onmouseout= "this.src='Images/image1.png';"/></div>
+            <div class="image-container"><img id="image2" src="Images/image2.png" width="200" height="200"
+                onmouseover= "this.src='Images/image11.png';"
+                onmouseout= "this.src='Images/image2.png';"/></div>
+            <div class="image-container"><img id="image3" src="Images/image3.png" width="200" height="200"
+                onmouseover= "this.src='Images/image12.png';"
+                onmouseout= "this.src='Images/image3.png';"/></div>
+            
+        </div> 
+
+        <div class="row">
+            <div class="image-container"><img id="image4" src="Images/image4.png" width="200" height="200"
+                onmouseover= "this.src='Images/image13.png';"
+                onmouseout= "this.src='Images/image4.png';"/></div>
+            <div class="image-container"><img id="image" src="Images/image5.png" width="200" height="200"
+                onmouseover= "this.src='Images/image14.png';"
+                onmouseout= "this.src='Images/image5.png';"/></div>
+            <div class="image-container"><img id="image6" src="Images/image6.png" width="200" height="200"
+                onmouseover= "this.src='Images/image15.png';"
+                onmouseout= "this.src='Images/image6.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="image7" src="Images/image7.png" width="200" height="200"
+                onmouseover= "this.src='Images/image16.png';"
+                onmouseout= "this.src='Images/image7.png';"/></div>
+            <div class="image-container"><img id="image8" src="Images/image8.png" width="200" height="200"
+                onmouseover= "this.src='Images/image17.png';"
+                onmouseout= "this.src='Images/image8.png';"/></div>
+            <div class="image-container"><img id="image9" src="Images/image9.png" width="200" height="200"
+                onmouseover= "this.src='Images/image18.png';"
+                onmouseout= "this.src='Images/image9.png';"/></div>
+        </div>
+       
+       
+    
+       
+        <script>
+            var sound1 = new buzz.sound("Sounds/sound1.mp3");
+            var sound2 = new buzz.sound("Sounds/sound2.mp3");
+            var sound3 = new buzz.sound("Sounds/sound3.mp3");
+            var sound4 = new buzz.sound("Sounds/sound4.mp3");
+            var sound5 = new buzz.sound("Sounds/sound5.mp3");   
+            var sound6 = new buzz.sound("Sounds/sound6.mp3");
+            var sound7 = new buzz.sound("Sounds/sound7.mp3");
+            var sound8 = new buzz.sound("Sounds/sound8.mp3");
+            var sound9 = new buzz.sound("Sounds/sound9.mp3");
+           
+            window.onload = function() {
+                document.getElementById('image1').addEventListener('click', function () {sound1.play();});
+                document.getElementById('image2').addEventListener('click', function () {sound2.play();});
+                document.getElementById('image3').addEventListener('click', function () {sound3.play();});
+                document.getElementById('image4').addEventListener('click', function () {sound4.play();});
+                document.getElementById('image5').addEventListener('click', function () {sound5.play();});
+               
+            
+            };
+        
+         
+        </script>
+    </body>
+
+
+</html>
